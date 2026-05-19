@@ -38,10 +38,7 @@ label chapter_1_start:
 
     #3
     pov "我闭上眼睛。"
-    scene bg_rooftop cloudy:
-        blur 20
-    with Dissolve(1.0)
-    scene black with Dissolve(1.5)
+    scene black with Dissolve(2.0)
     pov "指尖失去力气，诊断书随风飘落在地上。"
     pov "空气中混杂着泥土和青草的气息。"
     pov "深呼吸了一口，原本狂跳不止的心脏逐渐恢复平静。"
@@ -190,12 +187,24 @@ label chapter_1_start:
     yin "什么意思，难道你想阻止我吗？"
     
     #10
-label test:
+
     stop music fadeout 1.0
     pov "胸口生出一股无名的怒火。"
     pov "身体因为愤怒而发抖，我忍不住攥紧了拳头。"
 
     play sound "audio/sfx/sfx_003.mp3"
-    yin "你以为你是谁啊？{w=0.5}少在那儿装好人了，你懂我的什么？{w=1.0}" with vpunch
-    yin "{size=+10}{b}{color=#ffffff}亲人全死光了是什么感受你知道吗？！{/color}{/size}{/b}" with hpunch
-    yin "{size=+6}什么都不懂的家伙就别在那儿装模做样彰显同情心了！{/size}{w=0.5}" with hpunch
+    
+    yin "{size=+2}你以为你是谁啊？{w=0.1}少在那儿装好人了，你懂我的什么？{w=0.3}{nw}{/size}" with vpunch
+    extend "\n{size=+2}亲人全死光了什么感受你知道吗！？{w=0.3}{nw}{/size}" with hpunch
+    extend "\n{size=+2}什么都不懂的家伙就别在那儿装模做样彰显同情心了！{/size}" with hpunch
+    play sound "audio/sfx/sfx_001.mp3"
+
+    pov "我对着她破口大骂起来。"
+    scene black with Dissolve(1.0)
+    $ renpy.pause(1.0, hard=True)
+
+
+    pov "其实我知道的，{w=0.5}我只是不讲理地将怨气发泄在她的身上而已。"
+    pov "或许她和周围的人一样，只是想在力所能及的范围内安慰我一下，并没有别的意思。"
+    pov "可是，我实在是没心情去顾及她的感受了。"
+    pov "我只想安安静静去死而已。"

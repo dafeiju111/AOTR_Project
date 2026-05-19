@@ -7,6 +7,6 @@ label start:
     scene black with dissolve
     $ renpy.block_rollback()
 
-    #jump chapter_1_start
-    jump test
+    jump chapter_1_start
+    #jump test
     return
