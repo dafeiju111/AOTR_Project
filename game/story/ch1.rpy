@@ -4,12 +4,12 @@ label chapter_1_start:
     #1
     window hide
     scene black
-    play sound "audio/sfx/sfx_001.mp3" loop fadein 1.0
-    $ renpy.pause(0.5, hard=True)
+    play sound "audio/sfx/sfx_001.mp3" loop fadein 1.0 volume 0.3
+    pause 1.0 
     show screen intro_text_screen("听说，人从十米高的地方跳下去就会摔死。") with Dissolve(1.0)
-    $ renpy.pause(2.0, hard=True)
+    pause 2.0 
     hide screen intro_text_screen with Dissolve(1.5)
-    $ renpy.pause(1.0, hard=True)
+    pause 2.0 
     
     
     #2
@@ -23,12 +23,12 @@ label chapter_1_start:
     with Dissolve(1.0)
     window show
     with dissolve
-    $ renpy.pause(1.0, hard=True)
+    pause 1.0 
 
     
     pov "市民医院的屋顶。{w=1.0}"
     pov "我站在天台边上，低头数着安装在墙壁上的白色空调机箱。"
-    pov "一个，{w=1.0}两个，{w=1.0}三个..."
+    pov "一个，{w=0.7}两个，{w=0.7}三个..."
     pov "从上到下一共六台，距离地面大概二十多米。"
     pov "从这里跳下去，一定必死无疑吧。"
     pov "......"
@@ -50,7 +50,7 @@ label chapter_1_start:
     with Dissolve(2.0)
     window show 
     with dissolve
-    $ renpy.pause(1.0, hard=True)
+    pause 1.0 
 
     p_nvl "迄今为止，我几乎没碰上过什么好事。"
     p_nvl "和大多数女孩子一样，我出生在普通的家庭，过着平淡的日子。"
@@ -66,7 +66,7 @@ label chapter_1_start:
         xalign 0.0
         linear 30.0 xalign 1.0
     with fade
-    $ renpy.pause(1.0, hard=True)
+    pause 1.0 
     p_nvl "父母去世后，祖母将我接到老家，承担起抚养我的责任。"
     p_nvl "那时的我还很小，什么也不懂，只是每天魂不守舍地将自己关在狭小的房间里哭个不停，完全不愿意接受现实。"
     p_nvl "直到后来我才明白，在那段灰暗的日子，祖母为我付出了太多。"
@@ -86,12 +86,12 @@ label chapter_1_start:
     p_nvl "我唯一的念头就是读完高中，再找份工作，让祖母不要再过那么辛苦的日子。"
     p_nvl "然而，就是这个小小的愿望，我也无法实现。"
     nvl clear
-    $ renpy.pause(1.0, hard=True)
+    pause 1.0 
     p_nvl "一个月前，祖母也去世了。"
     nvl clear
 
     scene bg tap with fade
-    $ renpy.pause(1.5, hard=True)
+    pause 1.5
     p_nvl "祖母去世后，我自暴自弃地躺在家里，彻底成为了一个废人。"
     p_nvl "待在家里的我什么都不做，渴了就喝自来水，实在饿的不行，才会去超市买一些打折面包。"
     p_nvl "至于其他时间，我几乎都在睡觉。"
@@ -105,24 +105,25 @@ label chapter_1_start:
     nvl clear
 
     scene black with fade
-    $ renpy.pause(0.5, hard=True)
+    pause 0.5
     p_nvl "{size=80}{b}胃癌。{/b}{/size}"
-    $ renpy.pause(0.5, hard=True)
+    pause 0.5
     nvl clear
     p_nvl "白纸上的小字模糊不清，唯有那两个加粗的字符如同滚烫的烙印，填满了视线。"
-    p_nvl "晃悠悠地离开房间，等回过神来时，已经到了天台边上。"
+    p_nvl "我晃悠悠地离开房间，等回过神来时，已经到了天台边上。"
     nvl clear
 
     window hide
     scene bg rooftop cloudy with fade
     window show
-    with Dissolve(1.0)
-    $ renpy.pause(0.5, hard=True)
+    with Dissolve(2.0)
+    pause 0.5
     pov "胃癌，我知道这是什么意思。"
     pov "就算去最好的医院，买最贵的药，也不过多苟延残喘几天。"
     pov "更何况，我的存款早就开始见底了。"
     pov "与其孤独地死在出租屋里，还不如现在就从这里跳下去。"
     pov "至少，还能够早点解脱。"
+    pause 1.0
     pov "下定决心，我用力握紧了眼前的围栏。"
     pov "翻过去吧。"
     pov "只要翻过去，一切就都能够结束了......"
@@ -143,37 +144,36 @@ label chapter_1_start:
         linear 0.03 yoffset 5
         linear 0.03 yoffset -5
         linear 0.03 yoffset 0  
-    $ renpy.pause(1.0, hard=True) 
-    play sound "audio/sfx/sfx_001.mp3"
+    pause 1.0  
+    play sound "audio/sfx/sfx_001.mp3" volume 0.3
     unkown "喂，你在做什么呢？"
     pov "突如其来的声音将我吓了一跳。"   
     pov "转过头，只见身后不知何时站着一名少女。"
-    play music "audio/bgm/BGM_002.mp3" 
+    play music "audio/bgm/BGM_002.mp3" volume 0.5
     show you dress normal 1 with Dissolve(0.5)
     
 
     #7
     window show
     with dissolve
-    $ renpy.pause(0.5, hard=True) 
+    pause 0.5 
     pov "......"
-    pov "是同一间病房的人......"
+    pov "是同一间病房的人。"
     pov "虽然基本没在病房里待过，但因为长得很漂亮，让我对她有点印象。"
-    pov "白皙的皮肤，小巧的脸庞，是那种在学校里绝对很受男孩子欢迎的类型。"
-    pov "但是，我不是男孩子，突然闯入的陌生人，只会让我感到不快而已。"
+    pov "不过，漂亮与否和我又没有关系，突然闯入的陌生人，只会让我感到不快而已。"
 
     #8
-    lin "站那里可是很危险的。"
+    lin "站那儿可是很危险的，快下来吧。"
     lin "还是说......你想要跳下去？"
     lin "啊，那是你的诊断书吗？我能看看吗？"
     show you at yuu_updown(0.3,935)
-    $ renpy.pause(0.6, hard=True)
+    pause 0.5
     pov "我还没来得及说话，她就自顾自地捡起被扔在地上的诊断书。"
 
     lin "喔喔，胃癌啊，年纪轻轻的还真是不走运。"
     lin "......"
     lin "你该不会......是因为这个才想自杀吧？"
-    lin "......"
+    lin ".{w=0.1}.{w=0.1}.{w=0.1}.{w=0.1}.{w=0.1}."
     lin "真的假的？"
     lin "再考虑一下比较好哦？父母可是会伤心的。"
     
@@ -189,22 +189,169 @@ label chapter_1_start:
     #10
 
     stop music fadeout 1.0
+    play sound "audio/sfx/sfx_001.mp3" volume 0.3
     pov "胸口生出一股无名的怒火。"
     pov "身体因为愤怒而发抖，我忍不住攥紧了拳头。"
-
     play sound "audio/sfx/sfx_003.mp3"
-    
-    yin "{size=+2}你以为你是谁啊？{w=0.1}少在那儿装好人了，你懂我的什么？{w=0.3}{nw}{/size}" with vpunch
-    extend "\n{size=+2}亲人全死光了什么感受你知道吗！？{w=0.3}{nw}{/size}" with hpunch
-    extend "\n{size=+2}什么都不懂的家伙就别在那儿装模做样彰显同情心了！{/size}" with hpunch
-    play sound "audio/sfx/sfx_001.mp3"
+    yin "{size=+2}你以为你是谁啊？{w=0.2}少在那儿装好人了，你懂我的什么？{w=0.4}{nw}{/size}" with vpunch
+    extend "\n{size=+4}亲人全死光了什么感受你知道吗！？{w=0.4}{nw}{/size}" with hpunch
+    extend "\n什么都不懂的家伙就别在那儿装模做样彰显同情心了！" with hpunch
 
     pov "我对着她破口大骂起来。"
     scene black with Dissolve(1.0)
-    $ renpy.pause(1.0, hard=True)
+    pause 1.0 
 
-
-    pov "其实我知道的，{w=0.5}我只是不讲理地将怨气发泄在她的身上而已。"
+    pov "其实我知道的，{w=1.0}我只是不讲理地将怨气发泄在她的身上而已。"
     pov "或许她和周围的人一样，只是想在力所能及的范围内安慰我一下，并没有别的意思。"
     pov "可是，我实在是没心情去顾及她的感受了。"
     pov "我只想安安静静去死而已。"
+    scene bg rooftop cloudy with Dissolve(1.5)
+    show you dress normal 1 with Dissolve(0.5)
+    pause 0.5 
+    pov "......"
+    show layer master:
+        xalign 0.5 yalign 0.5
+        zoom 1.5 yoffset 200  
+        ease 3 xoffset -50
+    with Dissolve(0.5)        
+    pause 1.5
+    pov "不过，出人意料的是，面对我的怒吼，她并没有露出害怕的表情。"
+    pause 0.5
+    show layer master:
+        zoom 1.0 
+        xoffset 0 yoffset 0
+        xalign 0.0 yalign 0.0 
+    with Dissolve(0.5)
+
+    #11
+    pause 1.0 
+    play music "audio/bgm/BGM_002.mp3" fadein 1.0 volume 0.5
+    lin "你好像搞错了点什么，我可没有阻止你的想法。"
+    lin "你连死都不怕，还有谁能拦得住你。"
+    lin "我只是觉得，有点可惜而已"
+    yin "...{w=0.5}哈？"
+    lin "毕竟你看，咱们都是女孩子，就算死，也要死的漂亮一点吧？"
+    lin "从这里跳下去的话，你全身的骨头会摔得粉碎，四肢会像蜈蚣一样弯曲成一个好笑的角度。"
+    lin "如果运气差点脑袋着地，那就更惨了，红的白的直接撒一地。"
+    lin "唉......我是想不出有什么死法比摔死更惨烈了。"
+    yin "......"
+    pov "背后起了一阵鸡皮疙瘩。"
+    camera:
+        yoffset 10
+        linear 0.03 yoffset 10
+        linear 0.03 yoffset -10
+        linear 0.03 yoffset 8
+        linear 0.03 yoffset -8
+        linear 0.03 yoffset 4
+        linear 0.03 yoffset -4
+        linear 0.03 yoffset 0  
+    pause 1.0 
+    pov "我咽了口口水，下意识后退几步。"
+    
+    #12
+    lin "而且吧，你要是从这儿跳下去，自己死了不说，还得添一堆麻烦。"
+    lin "替你收尸的那人肯定会捏着鼻子，心想今天怎么这么倒霉。"
+    lin "对了，还有这里的院长，就是戴黑框眼镜的那个秃顶大叔。"
+    lin "人家才刚上任几年，你就来这么一出，估计他最后那点头发也要掉光了。"
+    lin "不过要说最困扰的人还是我啦。"
+    lin "因为天台的门是我偷偷打开的，来这里看风景可是我为数不多的兴趣了。"
+    lin "你要是死了，追查起责任，肯定还得算到我头上......"
+
+    show layer master:
+        xalign 0.5 yalign 0.5
+        zoom 1.5 yoffset 200  
+        linear 20 xoffset -100
+    with Dissolve(1.0) 
+    pause 1.0  
+    pov "......"
+    pov "人不可貌相。"
+    pov "看着滔滔不绝的少女，我深刻理解了这句话的含义。"
+    pause 1.0 
+    pov "从某种别的意义上。"
+    pause 1.0  
+    pov "我还从来没见过如此讨厌的家伙。"
+    pov "面对寻死之人，她竟然还能拿那种无所谓的态度来开玩笑。"
+    pov "有一瞬间，我甚至生出了要拉着她一起跳下去的阴暗念头。"
+    stop music fadeout(2.0)
+    scene black with Dissolve(1.0)
+    pause 1.0 
+    pov "但是不可否认，她说的有几分道理。"
+    pov "我活在这个世界上本来就祸害了不少人，如果死了还要继续添麻烦，实在说不过去。"
+    pov "还是找个没人的地方去死吧......"
+    pov "这么想着，我从天台边上退了下来。"
+    scene bg rooftop cloudy with Dissolve(1.0)
+    show you dress normal 1 with Dissolve(0.5)
+    lin "你决定下来了吗？真是太感谢了！"
+    lin "给，你的诊断书。"
+    play sound "audio/sfx/sfx_004.mp3" fadeout 1.0
+    pause 1.0 
+    camera:
+        xoffset 10
+        linear 0.03 xoffset 10
+        linear 0.03 xoffset -10
+        linear 0.03 xoffset 8
+        linear 0.03 xoffset -8
+        linear 0.03 xoffset 4
+        linear 0.03 xoffset -4
+        linear 0.03 xoffset 0
+    camera:
+        xoffset 0 yoffset 0 zoom 1.0  
+    pause 1.0 
+    pov "我一把抢过诊断书，揉成一团，用力丢了出去。" 
+    pov "少女和诊断书都是令人讨厌的存在，如果可以，我希望再也不要见到她们。"
+    pov "然而..."
+    scene black with Dissolve(1.0)
+    $ renpy.pause(1.0, hard=True)
+    play sound "audio/sfx/sfx_005.mp3" volume 0.8
+    $ renpy.pause(1.0, hard=True)
+    play music "audio/bgm/bgm_003.mp3" 
+
+
+    show cg 1 cloudy normal 3840:
+        subpixel True 
+        zoom 1.0
+        xalign 1.0 yalign -0.01 
+        alpha 0.0            
+        parallel:
+            linear 2.0 alpha 1.0
+        parallel:
+            pause 0.5 
+            ease 6.0 xalign 0.7 yalign 0.05
+    
+    $ renpy.pause(6.5, hard=True)
+
+    show cg 1 cloudy normal 1920 as fullview:
+        subpixel True
+        xalign 0.5 yalign 0.5
+        alpha 0.0
+        linear 1.0 alpha 1.0 
+    hide closeup with Dissolve(1.0)
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    pov"test"
