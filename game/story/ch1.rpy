@@ -160,7 +160,7 @@ label chapter_1_start:
     pov "......"
     pov "是同一间病房的人。"
     pov "虽然基本没在病房里待过，但因为长得很漂亮，让我对她有点印象。"
-    pov "不过，漂亮与否和我又没有关系，突然闯入的陌生人，只会让我感到不快而已。"
+    pov "不过，漂亮与否和我没有关系，突然闯入的陌生人只会让我感到不快而已。"
 
     #8
     lin "站那儿可是很危险的，快下来吧。"
@@ -205,6 +205,7 @@ label chapter_1_start:
     pov "或许她和周围的人一样，只是想在力所能及的范围内安慰我一下，并没有别的意思。"
     pov "可是，我实在是没心情去顾及她的感受了。"
     pov "我只想安安静静去死而已。"
+    play sound "audio/sfx/sfx_001.mp3" volume 0.2
     scene bg rooftop cloudy with Dissolve(1.5)
     show you dress normal 1 with Dissolve(0.5)
     pause 0.5 
@@ -228,8 +229,8 @@ label chapter_1_start:
     play music "audio/bgm/BGM_002.mp3" fadein 1.0 volume 0.5
     lin "你好像搞错了点什么，我可没有阻止你的想法。"
     lin "你连死都不怕，还有谁能拦得住你。"
-    lin "我只是觉得，有点可惜而已"
-    yin "...{w=0.5}哈？"
+    lin "我只是觉得，有点可惜而已。"
+    yin "......{w=0.5}哈？"
     lin "毕竟你看，咱们都是女孩子，就算死，也要死的漂亮一点吧？"
     lin "从这里跳下去的话，你全身的骨头会摔得粉碎，四肢会像蜈蚣一样弯曲成一个好笑的角度。"
     lin "如果运气差点脑袋着地，那就更惨了，红的白的直接撒一地。"
@@ -281,6 +282,8 @@ label chapter_1_start:
     pov "这么想着，我从天台边上退了下来。"
     scene bg rooftop cloudy with Dissolve(1.0)
     show you dress normal 1 with Dissolve(0.5)
+    window show dissolve
+    pause 0.5
     lin "你决定下来了吗？真是太感谢了！"
     lin "给，你的诊断书。"
     play sound "audio/sfx/sfx_004.mp3" fadeout 1.0
@@ -294,20 +297,19 @@ label chapter_1_start:
         linear 0.03 xoffset 4
         linear 0.03 xoffset -4
         linear 0.03 xoffset 0
-    camera:
-        xoffset 0 yoffset 0 zoom 1.0  
     pause 1.0 
     pov "我一把抢过诊断书，揉成一团，用力丢了出去。" 
     pov "少女和诊断书都是令人讨厌的存在，如果可以，我希望再也不要见到她们。"
-    pov "然而..."
+    pov "然而......"
     scene black with Dissolve(1.0)
+    window hide
     $ renpy.pause(1.0, hard=True)
     play sound "audio/sfx/sfx_005.mp3" volume 0.8
-    $ renpy.pause(1.0, hard=True)
+    $ renpy.pause(2.0, hard=True)
     play music "audio/bgm/bgm_003.mp3" 
 
 
-    show cg 1 cloudy normal 3840:
+    show cg 1 cloudy normal 3840 as closeup:
         subpixel True 
         zoom 1.0
         xalign 1.0 yalign -0.01 
@@ -326,9 +328,50 @@ label chapter_1_start:
         alpha 0.0
         linear 1.0 alpha 1.0 
     hide closeup with Dissolve(1.0)
-
-
+    pause 1.5
+    window show dissolve
+    pause 0.5
     
+    pov "少女依然站在原地，完全没有离开的意思。"
+    lin "请等一下。"
+    yin "干什么？快让开！"
+    lin "嘻嘻，别着急，先听我说完嘛。"
+    lin "你知道这么一个传闻吗？"
+    lin "听说，如果一个人的命运特别悲惨，神明出于怜悯，就会派出天使，在生命的最后帮助她实现愿望。"
+    yin "你有毛病吧？{w=0.5}谁会信这种鬼话？"
+    pause 0.5
+    pov "世界上根本就没有什么神明，也没有什么天使。"
+    pov "那种东西真的存在的话，爸爸妈妈，还有祖母就不会死了......"
+    camera:
+        xoffset 10
+        linear 0.03 xoffset 10
+        linear 0.03 xoffset -10
+        linear 0.03 xoffset 8
+        linear 0.03 xoffset -8
+        linear 0.03 xoffset 4
+        linear 0.03 xoffset -4
+        linear 0.03 xoffset 0
+    pause 1.0 
+    yin "总之快给我让开！"
+    pov "伸出手，我想将她推开。"
+    pov "然而，做到一半的动作却突然停住了。"
+
+    show cg 1 shine normal 1920 as fullview with Dissolve(1.0)
+    
+
+    pause 1.0
+    pov "飞鸟掠过上空，{w=0.5}少女的发丝和裙摆在空中飘动。"
+    pov "阳光穿过厚重的云层，洒落在她的身上,"
+    pov "朦胧中，仿佛添上了一双翅膀。"
+    pov "我不由得愣在原地。"
+
+    pause 1.0
+    lin "其实，传闻是真的。"
+    lin "因为，我就是那个派来帮助你的天使。"
+
+    scene black with Dissolve(1.5)
+    stop music fadeout 3.0
+
 
 
 
