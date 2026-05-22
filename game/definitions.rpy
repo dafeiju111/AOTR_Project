@@ -19,7 +19,7 @@ define pov = Character(None)
 
 define p_nvl = Character(None, kind=nvl)
 
-define unkown = Character(_("? ? ?"), color = "#ffffff")
+define unknown = Character(_("? ? ?"), color = "#ffffff")
 
 #定义文字在正中间的函数
 init -1:

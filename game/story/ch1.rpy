@@ -4,7 +4,7 @@ label chapter_1_start:
     #1
     window hide
     scene black
-    play sound "audio/sfx/sfx_001.mp3" loop fadein 1.0 volume 0.3
+    play sound "audio/sfx/sfx_001.mp3" loop fadein 1.0 volume 0.5
     pause 1.0 
     show screen intro_text_screen("听说，人从十米高的地方跳下去就会摔死。") with Dissolve(1.0)
     pause 2.0 
@@ -116,7 +116,7 @@ label chapter_1_start:
     window hide
     scene bg rooftop cloudy with fade
     window show
-    with Dissolve(2.0)
+    with Dissolve(1.0)
     pause 0.5
     pov "胃癌，我知道这是什么意思。"
     pov "就算去最好的医院，买最贵的药，也不过多苟延残喘几天。"
@@ -146,11 +146,11 @@ label chapter_1_start:
         linear 0.03 yoffset 0  
     pause 1.0  
     play sound "audio/sfx/sfx_001.mp3" volume 0.3
-    unkown "喂，你在做什么呢？"
+    unknown "喂，你在做什么呢？"
     pov "突如其来的声音将我吓了一跳。"   
     pov "转过头，只见身后不知何时站着一名少女。"
     play music "audio/bgm/BGM_002.mp3" volume 0.5
-    show you dress normal 1 with Dissolve(0.5)
+    show you dress normal 1 with Dissolve(1.0)
     
 
     #7
@@ -163,32 +163,32 @@ label chapter_1_start:
     pov "不过，漂亮与否和我没有关系，突然闯入的陌生人只会让我感到不快而已。"
 
     #8
-    lin "站那儿可是很危险的，快下来吧。"
-    lin "还是说......你想要跳下去？"
-    lin "啊，那是你的诊断书吗？我能看看吗？"
+    unknown "站那儿可是很危险的，快下来吧。"
+    unknown "还是说......你想要跳下去？"
+    unknown "啊，那是你的诊断书吗？我能看看吗？"
     show you at yuu_updown(0.3,935)
     pause 0.5
     pov "我还没来得及说话，她就自顾自地捡起被扔在地上的诊断书。"
 
-    lin "喔喔，胃癌啊，年纪轻轻的还真是不走运。"
-    lin "......"
-    lin "你该不会......是因为这个才想自杀吧？"
-    lin ".{w=0.1}.{w=0.1}.{w=0.1}.{w=0.1}.{w=0.1}."
-    lin "真的假的？"
-    lin "再考虑一下比较好哦？父母可是会伤心的。"
+    unknown "喔喔，胃癌啊，年纪轻轻的还真是不走运。"
+    unknown "......"
+    unknown "你该不会......是因为这个才想自杀吧？"
+    unknown ".{w=0.1}.{w=0.1}.{w=0.1}.{w=0.1}.{w=0.1}."
+    unknown "真的假的？"
+    unknown "再考虑一下比较好哦？父母可是会伤心的。"
     
     #9
     yin "父母早就......."
     pov "说到一半，我才意识到没有必要和她白费口舌，于是狠狠瞪了过去。"
     yin "话说和你没关系吧！你谁啊？"
-    lin "啊哈哈，别露出那么可怕的表情嘛。"
-    lin "而且，什么叫没关系，面前可是有一个活生生的人想要跳楼哦？"
-    lin "再怎么说也没办法做到假装看不见吧。"
+    unknown "啊哈哈，别露出那么可怕的表情嘛。"
+    unknown "而且，什么叫没关系，面前可是有一个活生生的人想要跳楼哦？"
+    unknown "再怎么说也没办法做到假装看不见吧。"
     yin "什么意思，难道你想阻止我吗？"
     
     #10
 
-    stop music fadeout 1.0
+    stop music fadeout 2.0
     play sound "audio/sfx/sfx_001.mp3" volume 0.3
     pov "胸口生出一股无名的怒火。"
     pov "身体因为愤怒而发抖，我忍不住攥紧了拳头。"
@@ -199,9 +199,9 @@ label chapter_1_start:
 
     pov "我对着她破口大骂起来。"
     scene black with Dissolve(1.0)
-    pause 1.0 
+    pause 2.0 
 
-    pov "其实我知道的，{w=1.0}我只是不讲理地将怨气发泄在她的身上而已。"
+    pov "其实我知道的，我只是不讲理地将怨气发泄在她的身上而已。"
     pov "或许她和周围的人一样，只是想在力所能及的范围内安慰我一下，并没有别的意思。"
     pov "可是，我实在是没心情去顾及她的感受了。"
     pov "我只想安安静静去死而已。"
@@ -227,14 +227,14 @@ label chapter_1_start:
     #11
     pause 1.0 
     play music "audio/bgm/BGM_002.mp3" fadein 1.0 volume 0.5
-    lin "你好像搞错了点什么，我可没有阻止你的想法。"
-    lin "你连死都不怕，还有谁能拦得住你。"
-    lin "我只是觉得，有点可惜而已。"
-    yin "......{w=0.5}哈？"
-    lin "毕竟你看，咱们都是女孩子，就算死，也要死的漂亮一点吧？"
-    lin "从这里跳下去的话，你全身的骨头会摔得粉碎，四肢会像蜈蚣一样弯曲成一个好笑的角度。"
-    lin "如果运气差点脑袋着地，那就更惨了，红的白的直接撒一地。"
-    lin "唉......我是想不出有什么死法比摔死更惨烈了。"
+    unknown "你好像搞错了点什么，我可没有阻止你的想法。"
+    unknown "你连死都不怕，还有谁能拦得住你。"
+    unknown "我只是觉得，有点可惜而已。"
+    yin "......哈？"
+    unknown "毕竟你看，咱们都是女孩子，就算死，也要死的漂亮一点吧？"
+    unknown "从这里跳下去的话，你全身的骨头会摔得粉碎，四肢会像蜈蚣一样弯曲成一个好笑的角度。"
+    unknown "如果运气差点脑袋着地，那就更惨了，红的白的直接撒一地。"
+    unknown "唉......我是想不出有什么死法比摔死更惨烈了。"
     yin "......"
     pov "背后起了一阵鸡皮疙瘩。"
     camera:
@@ -250,13 +250,13 @@ label chapter_1_start:
     pov "我咽了口口水，下意识后退几步。"
     
     #12
-    lin "而且吧，你要是从这儿跳下去，自己死了不说，还得添一堆麻烦。"
-    lin "替你收尸的那人肯定会捏着鼻子，心想今天怎么这么倒霉。"
-    lin "对了，还有这里的院长，就是戴黑框眼镜的那个秃顶大叔。"
-    lin "人家才刚上任几年，你就来这么一出，估计他最后那点头发也要掉光了。"
-    lin "不过要说最困扰的人还是我啦。"
-    lin "因为天台的门是我偷偷打开的，来这里看风景可是我为数不多的兴趣了。"
-    lin "你要是死了，追查起责任，肯定还得算到我头上......"
+    unknown "而且吧，你要是从这儿跳下去，自己死了不说，还得添一堆麻烦。"
+    unknown "替你收尸的那人肯定会捏着鼻子，心想今天怎么这么倒霉。"
+    unknown "对了，还有这里的院长，就是戴黑框眼镜的那个秃顶大叔。"
+    unknown "人家才刚上任几年，你就来这么一出，估计他最后那点头发也要掉光了。"
+    unknown "不过要说最困扰的人还是我啦。"
+    unknown "因为天台的门是我偷偷打开的，来这里看风景可是我为数不多的兴趣了。"
+    unknown "你要是死了，追查起责任，肯定还得算到我头上......"
 
     show layer master:
         xalign 0.5 yalign 0.5
@@ -273,7 +273,7 @@ label chapter_1_start:
     pov "我还从来没见过如此讨厌的家伙。"
     pov "面对寻死之人，她竟然还能拿那种无所谓的态度来开玩笑。"
     pov "有一瞬间，我甚至生出了要拉着她一起跳下去的阴暗念头。"
-    stop music fadeout(2.0)
+    stop music fadeout(3.0)
     scene black with Dissolve(1.0)
     pause 1.0 
     pov "但是不可否认，她说的有几分道理。"
@@ -284,8 +284,9 @@ label chapter_1_start:
     show you dress normal 1 with Dissolve(0.5)
     window show dissolve
     pause 0.5
-    lin "你决定下来了吗？真是太感谢了！"
-    lin "给，你的诊断书。"
+    unknown "你决定下来了吗？真是太感谢了！"
+    show you at yuu_updown(0.3,925)
+    unknown "给，你的诊断书。"
     play sound "audio/sfx/sfx_004.mp3" fadeout 1.0
     pause 1.0 
     camera:
@@ -299,14 +300,16 @@ label chapter_1_start:
         linear 0.03 xoffset 0
     pause 1.0 
     pov "我一把抢过诊断书，揉成一团，用力丢了出去。" 
-    pov "少女和诊断书都是令人讨厌的存在，如果可以，我希望再也不要见到她们。"
-    pov "然而......"
+    pov "少女和诊断书都是令人讨厌的存在，如果可以，我真希望再也不要见到她们。"
     scene black with Dissolve(1.0)
     window hide
+    pause 1.0
+    pov "然而......"
     $ renpy.pause(1.0, hard=True)
-    play sound "audio/sfx/sfx_005.mp3" volume 0.8
+    play sound "audio/sfx/sfx_005.mp3" volume 0.8 
     $ renpy.pause(2.0, hard=True)
-    play music "audio/bgm/bgm_003.mp3" 
+    play music "audio/bgm/bgm_003.mp3" volume 0.8 
+    pause 0.5
 
 
     show cg 1 cloudy normal 3840 as closeup:
@@ -317,10 +320,10 @@ label chapter_1_start:
         parallel:
             linear 2.0 alpha 1.0
         parallel:
-            pause 0.5 
+            pause 1.0 
             ease 6.0 xalign 0.7 yalign 0.05
     
-    $ renpy.pause(6.5, hard=True)
+    $ renpy.pause(7.0, hard=True)
 
     show cg 1 cloudy normal 1920 as fullview:
         subpixel True
@@ -333,15 +336,16 @@ label chapter_1_start:
     pause 0.5
     
     pov "少女依然站在原地，完全没有离开的意思。"
-    lin "请等一下。"
+    unknown "请等一下。"
     yin "干什么？快让开！"
-    lin "嘻嘻，别着急，先听我说完嘛。"
-    lin "你知道这么一个传闻吗？"
-    lin "听说，如果一个人的命运特别悲惨，神明出于怜悯，就会派出天使，在生命的最后帮助她实现愿望。"
-    yin "你有毛病吧？{w=0.5}谁会信这种鬼话？"
+    pov "我换上最强硬的语气，试图将她赶走，可是她却一点也不在意。"
+    unknown "嘻嘻，你别着急，先听我说完嘛。"
+    unknown "你知道这么一个传闻吗？"
+    unknown "听说，如果一个人的命运特别悲惨，神明出于怜悯，就会派出天使，在生命的最后帮助她实现愿望。"
+    yin "你有毛病吧？谁会信这种鬼话？"
     pause 0.5
     pov "世界上根本就没有什么神明，也没有什么天使。"
-    pov "那种东西真的存在的话，爸爸妈妈，还有祖母就不会死了......"
+    pov "要是那种东西真的存在的话，爸爸妈妈，还有祖母就不会死了......"
     camera:
         xoffset 10
         linear 0.03 xoffset 10
@@ -354,47 +358,26 @@ label chapter_1_start:
     pause 1.0 
     yin "总之快给我让开！"
     pov "伸出手，我想将她推开。"
-    pov "然而，做到一半的动作却突然停住了。"
+    pov "可是，做到一半的动作却突然停住了。"
+    pause 1.0
+    unknown "其实，传闻是真的。"
+    window hide Dissolve(1.0) 
 
-    show cg 1 shine normal 1920 as fullview with Dissolve(1.0)
+    show cg 1 shine normal 1920 as fullview with Dissolve(1.5)
     
 
     pause 1.0
-    pov "飞鸟掠过上空，{w=0.5}少女的发丝和裙摆在空中飘动。"
-    pov "阳光穿过厚重的云层，洒落在她的身上,"
-    pov "朦胧中，仿佛添上了一双翅膀。"
-    pov "我不由得愣在原地。"
+    window show dissolve
+    pause 0.5
+    pov "飞鸟掠过上空，少女的发丝和裙摆在空中飘动。"
+    pov "阳光穿过厚重的云层，洒落在她的身上，朦胧中仿佛添上了一双翅膀。"
+    pause 0.5
+    pov "少女的脸上露出前所未有的甜美笑容，我不由得愣在原地。"
 
-    pause 1.0
-    lin "其实，传闻是真的。"
-    lin "因为，我就是那个派来帮助你的天使。"
+    pause 1.5
+    unknown "因为，我就是那个派来帮助你的天使。"
 
     scene black with Dissolve(1.5)
     stop music fadeout 3.0
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     pov"test"
