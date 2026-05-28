@@ -369,7 +369,7 @@ label chapter_1_start:
     pause 1.0
     window show dissolve
     pause 0.5
-    pov "飞鸟掠过上空，少女的发丝和裙摆在空中飘动。"
+    pov "飞鸟掠过上空，发丝和裙摆在空中飘舞。"
     pov "阳光穿过厚重的云层，洒落在她的身上，朦胧中仿佛添上了一双翅膀。"
     pause 0.5
     pov "少女的脸上露出前所未有的甜美笑容，我不由得愣在原地。"
