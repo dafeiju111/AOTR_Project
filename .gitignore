@@ -1,17 +1,31 @@
+# ==========================================
+# 1. 全局大文件、压缩包与美术工程源文件过滤
+# ==========================================
 /**/*.7z
 /**/*.zip
 /**/*.rar
 /**/*.kra
 /**/.*.kra
 /**/*~
+
+# 全局屏蔽所有 Ren'Py 引擎与游戏生成的脚本编译缓存（彻底解决朋友 pull 不下来的问题）
+/**/*.rpyc
+/**/*.rpymc
+/**/*.rpyb
+
+# ==========================================
+# 2. 独立美术资源与本地备份文件夹过滤
+# ==========================================
+**/rubbish/
+**/backup/
+**/Game_Assets/
+
+# ==========================================
+# 3. Ren'Py 官方默认过滤规则
+# ==========================================
 # Directories that Ren'Py changes files in.
 /game/saves
 /game/cache
-
-# Compiled script files. These are important for saving, and so should
-# be preserved by developer and build systems after the game has been released.
-/game/**/*.rpyc
-/game/**/*.rpymc
 
 # Files Ren'Py can generate.
 /game/**/*.bak
@@ -30,4 +44,3 @@
 /dialogue.tab
 /dialogue.txt
 /strings.json
-
