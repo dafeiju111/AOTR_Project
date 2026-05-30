@@ -1,42 +1,44 @@
-2026-05-18 10:15:54 UTC
+2026-05-21 06:00:20 UTC
 Windows-11-10.0.26200-SP0
 Ren'Py 8.5.2.26010301
 
-Early init took 26 ms
-Loading error handling took 53 ms
-Loading script took 357 ms
-Loading save slot metadata took 10 ms
+Early init took 122 ms
+Loading error handling took 160 ms
+Loading script took 9467 ms
+Loading save slot metadata took 30 ms
 Loading persistent took 0 ms
 Set script version to: None (alternate path)
-Running init code took 313 ms
-Loading analysis data took 1 ms
-Analyze and compile ATL took 0 ms
-Reloading save slot metadata took 0 ms
-Dump and make backups took 0 ms
+ - Init at launcher/game/download.rpy:22 took 1393 ms.
+Running init code took 1939 ms
+Loading analysis data took 6 ms
+Analyze and compile ATL took 4 ms
+Reloading save slot metadata took 5 ms
+Backing up script files to 'C:\\Users\\lin\\AppData\\Roaming/RenPy/backups\\renpy':
+Dump and make backups took 772 ms
 Cleaning cache took 0 ms
-Making clean stores took 0 ms
-Initial gc took 26 ms
-DPI scale factor: 2.000000
+Making clean stores took 1 ms
+Initial gc took 137 ms
+DPI scale factor: 1.500000
 nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 10 ms
-Init translation took 0 ms
+nvdrs: Disabled thread optimizations.
+Creating interface object took 448 ms
+Init translation took 1 ms
 Cleaning stores took 0 ms
-Load screen analysis took 11 ms
-Analyze screens took 0 ms
-Save screen analysis took 0 ms
-Save pyanalysis took 0 ms
-Save bytecode took 0 ms
-Running _start took 0 ms
-Interface start took 136 ms
+Load screen analysis took 2 ms
+Analyze screens took 32 ms
+Save screen analysis took 25 ms
+Save pyanalysis took 7 ms
+Save bytecode took 233 ms
+Running _start took 1 ms
+Interface start took 571 ms
 
 Initializing gl2 renderer:
-primary display bounds: (0, 0, 3840, 2160)
+primary display bounds: (0, 0, 2560, 1440)
 swap interval: 1 frames
 Windowed mode.
-Vendor: 'Intel'
-Renderer: 'Intel(R) UHD Graphics 770'
-Version: '4.6.0 - Build 32.0.101.7077'
-Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 3840, 'current_h': 2160, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
-Screen sizes: virtual=(800, 600) physical=(1600, 1200) drawable=(1600, 1200)
+Vendor: 'NVIDIA Corporation'
+Renderer: 'NVIDIA GeForce RTX 4060 Laptop GPU/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 551.78'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 2560, 'current_h': 1440, 'refresh_rate': 165, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(800, 600) physical=(1536, 1152) drawable=(1536, 1152)
 Maximum texture size: 4096x4096

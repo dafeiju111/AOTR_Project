@@ -345,26 +345,46 @@ screen main_menu():
     ## 此语句可确保替换掉任何其他菜单屏幕。
     tag menu
 
+    style_prefix "main_menu"
+
     add gui.main_menu_background
+    add "gui/main_menu_mask.png" yalign 1.0
 
-    ## 此空框可使标题菜单变暗。
-    frame:
-        style "main_menu_frame"
-
-    ## use 语句将其他的屏幕包含进此屏幕。标题屏幕的实际内容在导航屏幕中。
-    use navigation
-
-    if gui.show_name:
-
-        vbox:
-            style "main_menu_vbox"
-
-            text "[config.name!t]":
-                style "main_menu_title"
-
-            text "[config.version]":
-                style "main_menu_version"
-
+    hbox:
+        xalign 0.5
+    ## 主菜单按钮 - 精确像素定位
+    fixed:
+        # yalign 0.95 移到了下方的每个按钮中
+        
+        textbutton _("开始游戏"):
+            xpos 350
+            yalign 0.95
+            xanchor 0.5
+            action Start()
+            
+        textbutton _("读取游戏"):
+            xpos 655
+            yalign 0.95
+            xanchor 0.5
+            action ShowMenu("load")
+            
+        textbutton _("设置"):
+            xpos 960
+            yalign 0.95
+            xanchor 0.5
+            action ShowMenu("preferences")
+            
+        textbutton _("画廊"):
+            xpos 1265
+            yalign 0.95
+            xanchor 0.5
+            action ShowMenu("gallery")
+            
+        textbutton _("退出"):
+            xpos 1570
+            yalign 0.95
+            xanchor 0.5
+            action Quit(confirm=not main_menu)
 
 style main_menu_frame is empty
 style main_menu_vbox is vbox
@@ -372,12 +392,29 @@ style main_menu_text is gui_text
 style main_menu_title is main_menu_text
 style main_menu_version is main_menu_text
 
+style main_menu_button is gui_button
+style main_menu_button_text is gui_button_text
+
+style main_menu_button:
+    background None
+    padding (10, 10)
+
+style main_menu_button_text:
+    font "fonts/Serif/SourceHanSerifCN-Light.ttf"
+    size 42
+    idle_color "#6A7682"
+    hover_color "#13171C"
+    selected_color "#13171C"
+    outlines [(0, "#000", 0, 0)]
+
+    hover_outlines [(2, "#13171C22", 0, 0)]
+
 style main_menu_frame:
     xsize 420
     yfill True
 
-    background "gui/overlay/main_menu.png"
-
+    #background "gui/overlay/main_menu.png"
+    background None
 style main_menu_vbox:
     xalign 1.0
     xoffset -30
@@ -394,6 +431,17 @@ style main_menu_title:
 style main_menu_version:
     properties gui.text_properties("version")
 
+
+screen gallery():
+    tag menu
+    use game_menu(_("画廊")):
+        vbox:
+            xalign 0.5
+            yalign 0.5
+            text _("画廊界面正在开发中..."):
+                font "fonts/LXGW/LXGWWenKai-Light.ttf"
+                size 40
+                color "#ffffff"
 
 ## 游戏菜单屏幕 ######################################################################
 ##

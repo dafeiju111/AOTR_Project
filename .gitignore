@@ -1,3 +1,9 @@
+/**/*.7z
+/**/*.zip
+/**/*.rar
+/**/*.kra
+/**/.*.kra
+/**/*~
 # Directories that Ren'Py changes files in.
 /game/saves
 /game/cache
@@ -24,3 +30,4 @@
 /dialogue.tab
 /dialogue.txt
 /strings.json
+
